@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-deep text-neutral-200 antialiased overflow-x-hidden selection:bg-brand-magenta selection:text-white;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-glass-gradient backdrop-blur-[30px] border border-glass shadow-2xl;
+  }
+  
+  .text-glow-cyan {
+    text-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+  }
+  
+  .text-glow-magenta {
+    text-shadow: 0 0 20px rgba(255, 0, 122, 0.5);
+  }
+}
